@@ -1,0 +1,32 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col" sortable="invitationId" (sort)="onSort($event)">invitation#</th>
+      <th scope="col" sortable="referenceId" (sort)="onSort($event)">reference#</th>
+      <th scope="col" sortable="loanNumber" (sort)="onSort($event)">loan#</th>
+      <th scope="col" sortable="firstName" (sort)="onSort($event)">First Name</th>
+      <th scope="col" sortable="lastName" (sort)="onSort($event)">Last Name</th>
+      <th scope="col" sortable="dob" (sort)="onSort($event)">DOB</th>
+      <th scope="col" sortable="zipcode" (sort)="onSort($event)">Zipcode</th>
+      <th scope="col" sortable="phone" (sort)="onSort($event)">Phone</th>
+      <th scope="col" sortable="date" (sort)="onSort($event)">Date</th>
+      <th scope="col" sortable="appOrPrescreen" (sort)="onSort($event)">App/Prescreen</th>
+      <th scope="col" sortable="brand" (sort)="onSort($event)">Brand</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let result of results">
+      <td>{{ result.invitationId }}</td>
+      <td>{{ result.referenceId }}</td>
+      <td>{{ result.loanNumber }}</td>
+      <td>{{ result.firstName }}</td>
+      <td>{{ result.lastName }}</td>
+      <td>{{ result.dob }}</td>
+      <td>{{ result.zipcode }}</td>
+      <td>{{ result.phone }}</td>
+      <td>{{ result.date }}</td>
+      <td>{{ result.appOrPrescreen }}</td>
+      <td>{{ result.brand }}</td>
+    </tr>
+  </tbody>
+</table>

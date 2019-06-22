@@ -1,0 +1,73 @@
+<div class="container-fluid">
+  <div class="row justify-content-md-center">
+    <div class="col">
+      <ngb-accordion [closeOthers]="true" activeIds="static-1">
+        <ngb-panel id="static-1" title="Simple">
+          <ng-template ngbPanelContent>
+            Some Text to Read
+          </ng-template>
+        </ngb-panel>
+        <ngb-panel id="static-2">
+          <ng-template ngbPanelTitle>
+            <span>&#9733; <b>Fancy</b> title &#9733;</span>
+          </ng-template>
+          <ng-template ngbPanelContent>
+            Some Text to Read
+          </ng-template>
+        </ngb-panel>
+        <ngb-panel id="static-3" title="Disabled" [disabled]="true">
+          <ng-template ngbPanelContent>
+            Some Text to Read
+          </ng-template>
+        </ngb-panel>
+      </ngb-accordion>
+    </div>
+    <div class="col-8">
+      <ngb-accordion [closeOthers]="true" activeIds="static-1">
+        <ngb-panel id="static-1" title="Search by Invitation, Reference, Loan">
+          <ng-template ngbPanelContent>
+            <invitation-form></invitation-form>
+          </ng-template>
+        </ngb-panel>
+        <ngb-panel id="static-2" title="Search by Customer Name">
+          <ng-template ngbPanelContent>
+            <name-form></name-form>
+          </ng-template>
+        </ngb-panel>
+        <ngb-panel id="static-3" title="Search by Phone, Email">
+          <ng-template ngbPanelContent>
+            <phone-form></phone-form>
+          </ng-template>
+        </ngb-panel>
+      </ngb-accordion>
+      <br>
+      <result-table></result-table>
+      <br>
+      <div class="text-center">
+        <button type="button" class="btn btn-primary">Start New Application</button>
+      </div>
+    </div>
+    <div class="col">
+      <ngb-accordion [closeOthers]="true" activeIds="static-1">
+        <ngb-panel id="static-1" title="Simple">
+          <ng-template ngbPanelContent>
+            Some Text to Read
+          </ng-template>
+        </ngb-panel>
+        <ngb-panel id="static-2">
+          <ng-template ngbPanelTitle>
+            <span>&#9733; <b>Fancy</b> title &#9733;</span>
+          </ng-template>
+          <ng-template ngbPanelContent>
+            Some Text to Read
+          </ng-template>
+        </ngb-panel>
+        <ngb-panel id="static-3" title="Disabled" [disabled]="true">
+          <ng-template ngbPanelContent>
+            Some Text to Read
+          </ng-template>
+        </ngb-panel>
+      </ngb-accordion>
+    </div>
+  </div>
+</div>
