@@ -1,4 +1,4 @@
-interface SearchResponse {
+export interface ISearchResponse {
     id: number;
     invitationId: number;
     referenceId: string;

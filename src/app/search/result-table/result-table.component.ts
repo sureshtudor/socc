@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { QueryList, ViewChildren } from '@angular/core';
 import { SortableHeader, SortEvent, compare } from './sortable-header.directive';
+import { ISearchResponse } from 'src/app/models/search-response';
 
 @Component({
   selector: 'result-table',
@@ -8,7 +9,7 @@ import { SortableHeader, SortEvent, compare } from './sortable-header.directive'
   styleUrls: ['./result-table.component.css']
 })
 export class ResultTableComponent implements OnInit {
-  results: SearchResponse[];
+  results: ISearchResponse[];
 
   constructor() { }
 
